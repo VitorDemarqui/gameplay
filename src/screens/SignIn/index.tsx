@@ -1,7 +1,6 @@
 import { View, 
   Text, 
-  Image,
-  StatusBar,
+  Image
 } from 'react-native';
 
 import { ButtonIcon } from '../../components/ButtonIcon';
@@ -12,11 +11,6 @@ export function SignIn() {
 
   return (
     <View style={styles.container}>
-      <StatusBar 
-        barStyle='light-content'
-        backgroundColor='transparent'
-        translucent
-      />
 
       <Image 
         source={IllustrationImg} 
@@ -27,11 +21,11 @@ export function SignIn() {
       <View style={styles.content}>
 
         <Text style = {styles.title}>
-          {`Organize\nsuas jogatinas\nfacilmente`}
+          {'Conecte-se\ne organize suas \njogatinas'}
         </Text>
 
         <Text style = {styles.subtitle}>
-          {`Crie grupos para jogar seus games\nfavoritos com seus amigos`}
+          {'Crie grupos para jogar seus games\nfavoritos com seus amigos'}
         </Text>
 
         <ButtonIcon 
