@@ -4,7 +4,7 @@ import { Rajdhani_500Medium, Rajdhani_700Bold} from '@expo-google-fonts/rajdhani
 import AppLoading from 'expo-app-loading'
 import { StatusBar } from 'react-native'
 
-import { Home } from './src/screens/Home';
+import { Routes } from './src/routes'
 import { Background } from './src/components/Background'
 
 export default function App() {
@@ -22,11 +22,11 @@ export default function App() {
   return (
     <Background>
       <StatusBar 
-          barStyle='light-content'
-          backgroundColor='transparent'
-          translucent
-        />
-      <Home />
+        barStyle='light-content'
+        backgroundColor='transparent'
+        translucent
+      />
+      <Routes />
     </Background>
   )
 }
